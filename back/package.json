@@ -1,0 +1,29 @@
+{
+  "name": "bugtool-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "make-seed": "npx knex seed:make faker --knexfile ./db/knexfile.js",
+    "seed": " npx knex seed:run --knexfile ./db/knexfile.js",
+    "migrate": "npx knex migrate:latest --knexfile ./db/knexfile.js",
+    "down": "npx knex migrate:down --knexfile ./db/knexfile.js",
+    "start": "nodemon server.js"
+   
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "knex": "^0.95.1",
+    "mongoose": "^5.11.8",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.7",
+    "objection": "^2.2.14",
+    "pg": "^8.5.1",
+    "socket.io": "^3.1.1"
+  }
+}
