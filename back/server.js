@@ -30,6 +30,8 @@ app.use(`${api_version}/erez`, ErezRouter);
 
 const VSRouter = require("./routes/vs.route.js");
 app.use(`${api_version}/vs`, VSRouter);
+const GeneralRouter = require("./routes/general.route.js");
+app.use(`${api_version}/tko`, GeneralRouter);
 
 //desc : start listing to PORT
 http.listen(PORT, function () {

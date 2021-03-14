@@ -13,6 +13,7 @@ function SearchBox(props: any) {
       display="flex"
       alignItems="center"
       mt={props.mt}
+      mb={props.mb}
       alignSelf="center"
     >
       <Input
